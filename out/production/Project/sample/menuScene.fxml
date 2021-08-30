@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuSceneController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="1080.0" prefWidth="400.0" style="-fx-background-color: #000000;">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="welcomeLabel" layoutX="142.0" layoutY="37.0" lineSpacing="20.0" prefHeight="126.0" prefWidth="258.0" text="HI, Manchester United!" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="clubImageView" fitHeight="111.0" fitWidth="102.0" layoutX="14.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Button fx:id="transferMarketButton" mnemonicParsing="false" onAction="#onClickBuyButton" prefHeight="80.0" prefWidth="333.0" style="-fx-background-color: #D5FFCC; -fx-background-radius: 50; -fx-border-color: #1A9900; -fx-border-radius: 50; -fx-border-width: 2;" text="TRANSFER MARKET" textFill="#1db954">
+               <font>
+                  <Font name="Tahoma Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="50.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="byPlayerName" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" onAction="#onClickByPlayerName" onMouseEntered="#onMouseHover" onMouseExited="#offMouseHover" prefHeight="60.0" prefWidth="380.0" style="-fx-background-color: 121212; -fx-background-radius: 7;" text="Search By Player Name" textFill="#b3b3b3">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+               </graphic>
+            </Button>
+            <Button fx:id="byCountry" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" onAction="#onClickByCountry" onMouseEntered="#onMouseHover" onMouseExited="#offMouseHover" prefHeight="60.0" prefWidth="380.0" style="-fx-background-color: 121212; -fx-background-radius: 7;" text="Search By Country" textFill="#b3b3b3">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+               </graphic>
+            </Button>
+            <Button fx:id="byPosition" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" onAction="#onClickByPosition" onMouseEntered="#onMouseHover" onMouseExited="#offMouseHover" prefHeight="60.0" prefWidth="380.0" style="-fx-background-color: 121212; -fx-background-radius: 7;" text="Search By Position" textFill="#b3b3b3">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+               </graphic>
+            </Button>
+            <Button fx:id="bySalaryRange" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" onAction="#onClickBySalaryRange" onMouseEntered="#onMouseHover" onMouseExited="#offMouseHover" prefHeight="60.0" prefWidth="380.0" style="-fx-background-color: 121212; -fx-background-radius: 7;" text="Search By Salary Range" textFill="#b3b3b3">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </Button>
+            <Line endX="255.5" fill="#535353" startX="-100.0" stroke="#535353" strokeWidth="2.0" />
+            <Button fx:id="countryWisePlayerCount" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" onAction="#onClickCountryWisePlayerCount" onMouseEntered="#onMouseHover" onMouseExited="#offMouseHover" prefHeight="60.0" prefWidth="380.0" style="-fx-background-color: 121212; -fx-background-radius: 7;" text="Country Wise Player Count" textFill="#b3b3b3">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="maximumSalaryPlayer" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" onAction="#onClickMaximumSalaryPlayer" onMouseEntered="#onMouseHover" onMouseExited="#offMouseHover" prefHeight="60.0" prefWidth="380.0" style="-fx-background-color: 121212; -fx-background-radius: 7;" text="Maximum Salary Player" textFill="#b3b3b3">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+               </graphic>
+            </Button>
+            <Button fx:id="maximumAgePlayer" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" onAction="#onClickMaximumAgePlayer" onMouseEntered="#onMouseHover" onMouseExited="#offMouseHover" prefHeight="60.0" prefWidth="380.0" style="-fx-background-color: 121212; -fx-background-radius: 7;" text="Maximum Age Player" textFill="#b3b3b3">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+               </graphic>
+            </Button>
+            <Button fx:id="maximumHeightPlayer" alignment="BASELINE_LEFT" graphicTextGap="30.0" mnemonicParsing="false" onAction="#onClickMaximumHeightPlayer" onMouseEntered="#onMouseHover" onMouseExited="#offMouseHover" prefHeight="60.0" prefWidth="380.0" style="-fx-background-color: 121212; -fx-background-radius: 7;" text="Maximum Height Player" textFill="#b3b3b3">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <graphic>
+               </graphic>
+            </Button>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Line endX="255.5" fill="#535353" startX="-100.0" stroke="#535353" strokeWidth="2.0" />
+                  <Label fx:id="salaryLabel" prefHeight="121.0" prefWidth="443.0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="400.0" layoutY="-8.0" prefHeight="1080.0" prefWidth="1520.0" style="-fx-background-color: #121212;">
+         <children>
+            <AnchorPane prefHeight="216.0" prefWidth="1520.0" style="-fx-background-color: 121212;">
+               <children>
+                  <TextField fx:id="primaryTextField" layoutX="71.0" layoutY="128.0" onKeyPressed="#search" prefHeight="69.0" prefWidth="515.0" promptText="Player Name" style="-fx-background-radius: 15PX;">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="secondaryTextField" layoutX="793.0" layoutY="128.0" onKeyPressed="#search" prefHeight="69.0" prefWidth="577.0" promptText="Max Range" style="-fx-background-radius: 15PX;">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </TextField>
+                  <Label layoutX="71.0" layoutY="53.0" prefHeight="38.0" prefWidth="569.0" text="Find Players" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="48.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <HBox layoutY="216.0" minHeight="-Infinity" prefHeight="872.0" prefWidth="1520.0" style="-fx-background-color: #ff0000;">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="872.0" prefWidth="1520.0" style="-fx-background-color: #121212; -fx-background: #121212;" HBox.hgrow="ALWAYS">
+                     <content>
+                        <GridPane fx:id="grid" prefHeight="24.0" prefWidth="289.0" style="-fx-background-color: #121212; -fx-region-background: #121212; -fx-background-insets: #121212;">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                        </GridPane>
+                     </content>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

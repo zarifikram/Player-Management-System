@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="1450.0" style="-fx-background-color: #121212; -fx-background-radius: 50px;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PlayerSceneController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutY="-1.0" prefHeight="200.0" prefWidth="1450.0" style="-fx-background-color: #434343; -fx-background-radius: inherit;">
+         <children>
+            <Label fx:id="numberLabel" alignment="CENTER" prefHeight="202.0" prefWidth="132.0" style="-fx-background-color: #434343; -fx-background-radius: 20;" text="10" textFill="WHITE">
+               <font>
+                  <Font name="Gloucester MT Extra Condensed" size="96.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Label>
+            <ImageView fx:id="faceImageView" fitHeight="202.0" fitWidth="312.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/DaviddeGea.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="50.0" />
+               </HBox.margin></ImageView>
+            <VBox alignment="CENTER_LEFT" prefHeight="202.0" prefWidth="342.0">
+               <children>
+                  <Label fx:id="firstNameLabel" text="DAVID" textFill="#eeeeee">
+                     <font>
+                        <Font name="Tahoma" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lastNameLabel" alignment="TOP_LEFT" prefHeight="63.0" prefWidth="345.0" text="DE GEA" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="48.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="positionLabel" prefHeight="30.0" text="Goalkeeper" textFill="#818181">
+                     <font>
+                        <Font name="Tahoma" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Line endY="80.0" startY="-80.0" stroke="#818181" strokeWidth="3.0" />
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="264.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="ageLabel" prefHeight="50.0" prefWidth="130.0" text="Age : 33" textFill="#b2b2b2">
+                           <font>
+                              <Font name="Tahoma" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="heightLabel" prefHeight="50.0" prefWidth="168.0" text="Height : 1.45m" textFill="#b2b2b2">
+                           <font>
+                              <Font name="Tahoma" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Label fx:id="salaryLabel" prefHeight="100.0" prefWidth="260.0" text="\$69,420" textFill="WHITE">
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Tahoma Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="countryImageView" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Spain.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="clubImageView" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ManchesterUnited.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </VBox>
+            <Button fx:id="actionButton" mnemonicParsing="false" onAction="#onClickSellButton" onMouseEntered="#onMouseHover" onMouseExited="#offMouseHover" prefHeight="202.0" prefWidth="300.0" style="-fx-background-color: #B3B3B3; -fx-background-radius: 20;" text="SELL" textFill="#434343" wrapText="true">
+               <font>
+                  <Font name="Tahoma Bold" size="48.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

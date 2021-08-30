@@ -1,0 +1,29 @@
+.bodybg{
+    -fx-background-image: url("loginBackground.png");
+    -fx-background-size: cover;
+}
+
+.loginCard{
+    -fx-background-color: #121212;
+    -fx-pref-width: 900;
+    -fx-pref-height: 900;
+    -fx-background-radius: 30;
+}
+.loginTextContainer{
+    -fx-pref-width: 200;
+}
+.loginTextBox{
+    -fx-pref-height: 120;
+    -fx-background-color:#434343;
+    -fx-background-radius: 10;
+    -fx-text-fill: #e4e6eb;
+
+}
+
+.loginButton{
+    -fx-pref-height: 120;
+    -fx-background-color:#E4E6EB;
+    -fx-text-fill: #18191A;
+    -fx-pref-width: 700;
+    -fx-background-radius: 70;
+}

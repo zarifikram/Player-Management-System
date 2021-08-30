@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="1450.0" style="-fx-background-color: #121212; -fx-background-radius: 50px;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CountryCountSceneController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutY="-1.0" prefHeight="200.0" prefWidth="1450.0" style="-fx-background-color: #434343; -fx-background-radius: inherit;">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="553.0">
+               <children>
+                  <Label fx:id="countryNameLabel" prefHeight="145.0" prefWidth="763.0" text="SWITZERLAND" textFill="#e4e6eb">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <font>
+                        <Font name="Tahoma Bold" size="48.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Line endY="80.0" startY="-80.0" stroke="#818181" strokeWidth="3.0" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="661.0">
+               <children>
+                  <Label fx:id="playerCountLabel" prefHeight="131.0" prefWidth="620.0" text="PLAYER COUNT :       10" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="48.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
